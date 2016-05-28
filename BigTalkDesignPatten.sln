@@ -7,6 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.简单工厂模式", "01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc", "Calc\Calc.csproj", "{7E700E18-A2D1-4E9F-B4E2-698E247387B5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.策略模式", "02.策略模式", "{851F92C1-9423-42FD-8540-11739F446D33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPatten", "StrategyPatten\StrategyPatten.csproj", "{FC661266-B244-4361-A0B7-3B3758A3C607}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopCash", "ShopCash\ShopCash.csproj", "{7F2B5F48-9DD1-415D-ACC5-AF5F5C56119B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +23,21 @@ Global
 		{7E700E18-A2D1-4E9F-B4E2-698E247387B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E700E18-A2D1-4E9F-B4E2-698E247387B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E700E18-A2D1-4E9F-B4E2-698E247387B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC661266-B244-4361-A0B7-3B3758A3C607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC661266-B244-4361-A0B7-3B3758A3C607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC661266-B244-4361-A0B7-3B3758A3C607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC661266-B244-4361-A0B7-3B3758A3C607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F2B5F48-9DD1-415D-ACC5-AF5F5C56119B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F2B5F48-9DD1-415D-ACC5-AF5F5C56119B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F2B5F48-9DD1-415D-ACC5-AF5F5C56119B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F2B5F48-9DD1-415D-ACC5-AF5F5C56119B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7E700E18-A2D1-4E9F-B4E2-698E247387B5} = {D95989A5-836A-4A45-939D-B7DE1DA1457E}
+		{FC661266-B244-4361-A0B7-3B3758A3C607} = {851F92C1-9423-42FD-8540-11739F446D33}
+		{7F2B5F48-9DD1-415D-ACC5-AF5F5C56119B} = {851F92C1-9423-42FD-8540-11739F446D33}
 	EndGlobalSection
 EndGlobal
