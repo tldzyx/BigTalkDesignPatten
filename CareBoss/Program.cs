@@ -27,10 +27,10 @@ namespace CareBoss
             var yiguancha = new StockObserver("易管察", huhansan);
 
 
-            huhansan.Attach(weiguancha);
-            huhansan.Attach(yiguancha);
+            huhansan.Update += weiguancha.CloseStockMarket;
+            huhansan.Update += yiguancha.CloseStockMarket;
 
-            huhansan.Detach(weiguancha);
+            //huhansan.Detach(weiguancha);
 
             // 老板回来
             huhansan.SubjectState = "我胡汉三回来了！";

@@ -2,17 +2,20 @@
 
 namespace CareBoss
 {
-    internal class StockObserver : Observer
+    internal class StockObserver
     {
-        public StockObserver(string name, Subject subject)
-            : base(name, subject)
-        {
+        private readonly string _name;
+        private readonly ISubject _subject;
 
+        public StockObserver(string name, ISubject subject)
+        {
+            _name = name;
+            _subject = subject;
         }
 
-        public override void Update()
+        public void CloseStockMarket()
         {
-            Console.WriteLine($"{Subject.SubjectState} {Name} 关闭股票行情，继续工作！");
+            Console.WriteLine($"{_subject.SubjectState} {_name} 关闭股票行情，继续工作！");
         }
     }
 }

@@ -1,31 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using System;
 
 namespace CareBoss
 {
-    internal class Secretary : Subject
+    internal class Secretary : ISubject
     {
-        // 同事列表
-        private readonly HashSet<Observer> _observers = new HashSet<Observer>();
-
-        // 增加
-        public override void Attach(Observer observer)
-        {
-            _observers.Add(observer);
-        }
-
-        // 减少
-        public override void Detach(Observer observer)
-        {
-            _observers.Remove(observer);
-        }
+        public event Action Update;
 
         // 通知
-        public override void Notify()
+        public string SubjectState { get; set; }
+
+        public void Notify()
         {
-            foreach (var stockObserver in _observers)
-            {
-                stockObserver.Update();
-            }
+            Update?.Invoke();
         }
     }
 }

@@ -2,16 +2,20 @@
 
 namespace CareBoss
 {
-    internal class NbaObserver : Observer
+    internal class NbaObserver
     {
-        public NbaObserver(string name, Subject subject)
-            : base(name, subject)
+        private readonly string _name;
+        private readonly ISubject _subject;
+
+        public NbaObserver(string name, ISubject subject)
         {
+            _name = name;
+            _subject = subject;
         }
 
-        public override void Update()
+        public void CloseNbaDirectSeeding()
         {
-            Console.WriteLine($"{Subject.SubjectState} {Name} 关闭NBA直播，继续工作！");
+            Console.WriteLine($"{_subject.SubjectState} {_name} 关闭NBA直播，继续工作！");
         }
     }
 }
