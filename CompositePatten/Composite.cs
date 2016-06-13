@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 
 namespace CompositePatten
 {
     internal class Composite : Component
     {
-        private readonly ICollection<Component> _children = new Collection<Component>();
+        private readonly IList<Component> _children = new List<Component>();
 
         public Composite(string name)
             : base(name)

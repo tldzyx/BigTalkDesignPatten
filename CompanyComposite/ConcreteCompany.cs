@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 
 namespace CompanyComposite
 {
     internal class ConcreteCompany : Company
     {
-        private readonly ICollection<Company> _children = new Collection<Company>();
+        private readonly IList<Company> _children = new List<Company>();
 
         public ConcreteCompany(string name)
             : base(name)
