@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IteratorPatten
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            ConcreteAggregate<string> aggregate = new ConcreteAggregate<string>();
+            var aggregate = new ConcreteAggregate<string>();
 
             aggregate[0] = "大鸟";
             aggregate[1] = "小菜";
@@ -21,7 +17,7 @@ namespace IteratorPatten
 
             //Iterator<string> iterator = aggregate.CreateIterator();
             Iterator<string> iterator = new ConcreteIteratorDesc<string>(aggregate);
-            string item = iterator.First();
+            var item = iterator.First();
             while (!iterator.IsDone())
             {
                 Console.WriteLine($"{iterator.CurrentItem()} 请买车票！");
